@@ -18,6 +18,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/skins/_all-skins.min.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/custom.css")}}">
   
       @yield('styles')
   
@@ -66,40 +67,5 @@
   <!-- AdminLTE for demo purposes -->
    
   </body>
-  
+
   </html>
-
-    <div class="wrapper">
-
-@include("theme/$theme/header")
-
-@include("theme/$theme/aside")
-
-      <div class="content-wrapper">
-     
-        <!-- Main content -->
-        <section class="content">
-
-          @yield('contenido')
-          
-        </section>
-
-    </div>
-    @include("theme/$theme/footer")
-  </div>
-  <!-- jQuery 3 -->
-<script src="{{asset("assets/$theme/bower_components/jquery/dist/jquery.min.js")}}"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="{{asset("assets/$theme/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
-<!-- SlimScroll -->
-<script src="{{asset("assets/$theme/bower_components/jquery-slimscroll/jquery.slimscroll.min.js")}}"></script>
-<!-- FastClick -->
-<script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
-<!-- AdminLTE for demo purposes -->
-@yield('scripts') 
-
-</body>
-
-</html>
